@@ -3,7 +3,6 @@
 namespace Medboubazine\Telegram\Api;
 
 use Medboubazine\Telegram\Core\Abstracts\ApiClassesAbstract;
-use Medboubazine\Telegram\Core\Helpers\Collection;
 use Medboubazine\Telegram\Core\Interfaces\ApiClassesInterface;
 use Medboubazine\Telegram\Core\Traits\GuzzleHttpTrait;
 use Medboubazine\Telegram\Elements\BotElement;

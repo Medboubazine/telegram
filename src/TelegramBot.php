@@ -3,6 +3,7 @@
 namespace Medboubazine\Telegram;
 
 use Medboubazine\Telegram\Api\GetMe;
+use Medboubazine\Telegram\Api\Messages;
 use Medboubazine\Telegram\Api\Updates;
 use Medboubazine\Telegram\Api\Webhook;
 use Medboubazine\Telegram\Auth\Credentials;
@@ -50,5 +51,14 @@ final class TelegramBot
     public function webhook(): Webhook
     {
         return new Webhook($this->credentials);
+    }
+    /**
+     * Mesages
+     *
+     * @return Messages
+     */
+    public function messages(): Messages
+    {
+        return new Messages($this->credentials);
     }
 }

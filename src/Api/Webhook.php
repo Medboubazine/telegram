@@ -5,7 +5,6 @@ namespace Medboubazine\Telegram\Api;
 use Medboubazine\Telegram\Core\Abstracts\ApiClassesAbstract;
 use Medboubazine\Telegram\Core\Helpers\Arr;
 use Medboubazine\Telegram\Core\Helpers\Carbon;
-use Medboubazine\Telegram\Core\Helpers\Http;
 use Medboubazine\Telegram\Core\Helpers\HttpRequest;
 use Medboubazine\Telegram\Core\Helpers\Json;
 use Medboubazine\Telegram\Core\Interfaces\ApiClassesInterface;
