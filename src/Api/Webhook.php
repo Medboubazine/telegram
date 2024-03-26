@@ -89,7 +89,7 @@ final class Webhook extends ApiClassesAbstract implements ApiClassesInterface
      */
     public function capture(?string $api_secret_token = null): ?UpdateElement
     {
-        $data = HttpRequest::data();
+        $data = json_decode(HttpRequest::body() ??  "",true) ?? [];
         $secret_token = HttpRequest::header("X-Telegram-Bot-Api-Secret-Token");
 
         if ($api_secret_token === $secret_token) {
