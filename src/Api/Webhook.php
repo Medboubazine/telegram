@@ -47,7 +47,7 @@ final class Webhook extends ApiClassesAbstract implements ApiClassesInterface
     {
         $query =  http_build_query([
             "url" => $url,
-            "secret" => $secret,
+            "secret_token" => $secret,
             "max_connections" => $max_connections,
         ]);
         $response = $this->__request("POST", "setWebhook?{$query}");
